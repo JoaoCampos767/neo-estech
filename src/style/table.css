@@ -1,0 +1,7 @@
+.ant-table-content{
+    width: 100%;
+}
+.ant-table-cell{
+    background-color: red;
+    width: 200vh;
+}
