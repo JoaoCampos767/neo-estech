@@ -1,13 +1,13 @@
-import { Table } from "antd";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
+import { Table } from "antd";
 import "../style/table.css";
 
 export default function Home() {
-  const [qrcode, setQrcode] = useState({});
+  const [qrcode, setQrcode] = useState([]);
 
   useEffect(() => {
-    var options = {
+    const config = {
       method: "GET",
       url: "https://dev.api.neoestech.com.br/dashboard/teste-dev",
       headers: {
@@ -15,13 +15,11 @@ export default function Home() {
         Authorization: "Bearer 1462|xhkruOA7Q2yL9WQyvHW3pEI6HF0vS5SJzmsRHClE",
       },
     };
-    axios
-      .request(options)
-      .then(function (response) {
-        // console.log(response.data);
-        setQrcode(response.data.chamados_abertos);
 
-        data();
+    axios
+      .request(config)
+      .then(function (response) {
+        setQrcode(response.data.chamados_abertos);
       })
       .catch(function (error) {
         console.log(error);
@@ -36,8 +34,8 @@ export default function Home() {
     },
     {
       title: "Referência Cliente",
-      dataIndex: "referencia",
-      key: "referencia",
+      dataIndex: "referencia_cliente",
+      key: "referencia_cliente",
     },
     {
       title: "Problema",
@@ -51,26 +49,19 @@ export default function Home() {
     },
   ];
 
-  const data = [
-    () => {
-      qrcode.map((q) => {        
-        console.log(
-          q.id +
-            " / " +
-            q.referencia_cliente +
-            " / " +
-            q.problema +
-            " / " +
-            q.status
-        );
-      });
-    },
-  ];
+  /*const App = () => (
+    <Table dataSource={qrcode} columns={columns}>
+      {qrcode.map((data) => {
+        return <div>{data.qrcode}</div>;
+      })}
+    </Table>
+  );*/
+
+  const App = () => <Table dataSource={qrcode} columns={columns} />;
 
   return (
     <>
-      {data}
-      <Table columns={columns} dataSource={data} />
+      <App />
     </>
   );
 }
