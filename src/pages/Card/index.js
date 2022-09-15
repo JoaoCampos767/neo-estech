@@ -1,5 +1,7 @@
-import { Card } from 'antd';
-import React from 'react';
+import React from "react";
+import { Link } from "react-router-dom";
+import { Button } from "antd";
+import { Card } from "antd";
 import "./styles.css";
 
 const App = () => (
@@ -14,6 +16,10 @@ const App = () => (
       <p>Card content</p>
       <p>Card content</p>
     </Card>
+    
+    <Link to={{ pathname: "/" }}>
+      <Button type="link">Voltar</Button>
+    </Link>
   </>
 );
 

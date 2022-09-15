@@ -1,6 +1,8 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Table } from "antd";
+import { Link } from "react-router-dom";
+import { Button } from "antd";
 import "./styles.css";
 
 export default function Tabled() {
@@ -62,6 +64,9 @@ export default function Tabled() {
   return (
     <>
       <App />
+      <Link to={{pathname: "/"}}>
+        <Button type="link">Voltar</Button>
+      </Link>
     </>
   );
 }
