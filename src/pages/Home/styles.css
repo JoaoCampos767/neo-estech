@@ -1,0 +1,13 @@
+@import "~antd/dist/antd.css";
+
+.ant-btn {
+  width: 100px;
+}
+
+.ant-btn-primary {
+  width: 100px;
+}
+
+.ant-btn-block {
+  width: 100px;
+}

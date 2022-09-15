@@ -1,21 +1,19 @@
-import React from "react";
-import { Route, BrowserRouter } from "react-router-dom";
+import { Route, BrowserRouter, Routes } from "react-router-dom";
 
-import Table from "./pages/Table/index";
-import Chart from "./pages/Chart/index";
-import Card from "./pages/Card/index";
+import Home from "./pages/Home";
+import Table from "./pages/Table";
+import Chart from "./pages/Chart";
+import Card from "./pages/Card";
 
-const Routes = () => {
+export default function Rotas() {
   return (
     <BrowserRouter>
-      <Route component={Table} path="/" exact/>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/table" element={<Table />} />
+        <Route path="/chart" element={<Chart />} />
+        <Route path="/card" element={<Card />} />
+      </Routes>
     </BrowserRouter>
   );
-};
-
-export default Routes;
-
-/*
-      <Route component={Chart} path="/chart" />
-      <Route component={Card} path="/card" />
-*/
+}
