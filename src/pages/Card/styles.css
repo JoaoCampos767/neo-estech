@@ -1,0 +1,6 @@
+@import '~antd/dist/antd.css';
+
+.code-box-demo p {
+  margin: 0;
+}
+.ant-card { margin-bottom: 30px; }

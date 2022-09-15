@@ -1,9 +1,9 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Table } from "antd";
-import "../style/table.css";
+import "./styles.css";
 
-export default function Home() {
+export default function Tabled() {
   const [qrcode, setQrcode] = useState([]);
 
   useEffect(() => {
