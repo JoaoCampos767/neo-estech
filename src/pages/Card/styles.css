@@ -1,6 +1,18 @@
-@import '~antd/dist/antd.css';
-
-.code-box-demo p {
-  margin: 0;
+.ant-card { 
+  margin-left: 600px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  width: 300px;
 }
-.ant-card { margin-bottom: 30px; }
+
+.ant-btn-card{
+  margin-left: 600px;
+}
+
+.ant-card-head{
+  border: 1px solid;
+}
+
+.ant-card-body{
+  border: 1px solid;  
+}

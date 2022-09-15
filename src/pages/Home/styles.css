@@ -25,3 +25,12 @@
   .ant-layout-sider-children{
     height: 100px;
   }
+
+  .home-wrapper{
+    width: 500px;
+    margin-left: 600px;
+  }
+
+  .ant-btn-home{
+    margin-left: 250px;
+  }
