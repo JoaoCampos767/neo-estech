@@ -65,7 +65,7 @@ export default function Tabled() {
     <>
       <App />
       <Link to={{pathname: "/"}}>
-        <Button type="link">Voltar</Button>
+        <Button className="ant-btn-table" type="link">Voltar</Button>
       </Link>
     </>
   );

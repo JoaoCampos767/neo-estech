@@ -1,6 +1,7 @@
 import { Button } from "antd";
 import React from "react";
 import { Link } from "react-router-dom";
+import "./styles.css";
 
 export default function Btn() {
   return (
@@ -13,13 +14,21 @@ export default function Btn() {
         </Link>
 
         <Link to={{ pathname: "/chart" }}>
-          <Button type="primary">Graficos</Button>
+          <Button className="ant-btn-home" type="primary">
+            Graficos
+          </Button>
         </Link>
 
         <Link to={{ pathname: "/card" }}>
-          <Button type="primary">Cartões</Button>
+          <Button className="ant-btn-home" type="primary">
+            Cartões
+          </Button>
         </Link>
       </div>
     </>
   );
 }
+
+/*
+
+*/

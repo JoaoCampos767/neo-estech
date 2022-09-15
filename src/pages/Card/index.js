@@ -33,7 +33,14 @@ export default function Cardd() {
     <>
       {qrcode.map((data) => {
         return (
-          <Card title="Status da Estação">
+          <Card
+            title="Status da Estação"
+            Style={
+              data.status === "Online"
+                ? "border: 2.5px solid green"
+                : "border: 2.5px solid red"
+            }
+          >
             <div>{data.nome}</div>
             <div>Status: {data.status}</div>
           </Card>
@@ -41,7 +48,9 @@ export default function Cardd() {
       })}
 
       <Link to={{ pathname: "/" }}>
-        <Button className="ant-btn-card" type="link">Voltar</Button>
+        <Button className="ant-btn-card" type="link">
+          Voltar
+        </Button>
       </Link>
     </>
   );

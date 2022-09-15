@@ -1,1 +1,22 @@
-@import '~antd/dist/antd.css';
+@import "~antd/dist/antd.css";
+
+.ant-spin-container {
+  width: 80rem;
+  border: 2px solid;
+  margin-left: 7rem;
+  margin-top: 2rem;
+
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-size: 15px;
+}
+
+.ant-pagination{
+    width: 78.8rem;
+}
+
+.ant-btn-table{
+    margin-left: 7rem;
+  }

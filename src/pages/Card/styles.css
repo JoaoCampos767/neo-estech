@@ -1,18 +1,19 @@
-.ant-card { 
-  margin-left: 600px;
-  margin-bottom: 10px;
-  margin-top: 10px;
+.ant-card {
+  margin-left: 38rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
   width: 300px;
 }
 
-.ant-btn-card{
-  margin-left: 600px;
+.ant-card-bordered {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-size: 15px;
 }
 
-.ant-card-head{
-  border: 1px solid;
-}
-
-.ant-card-body{
-  border: 1px solid;  
+.ant-btn-card {
+  margin-left: 38rem;
+  margin-top: -10px
 }
