@@ -1,7 +1,7 @@
 import * as React from "react";
 import "antd/dist/antd.css";
 import "./styles.css";
-import { Form, Input, Button, Alert } from "antd";
+import { Form, Input, Button } from "antd";
 import { UserOutlined, LockOutlined } from "@ant-design/icons";
 import { useNavigate } from "react-router-dom";
 
@@ -21,7 +21,6 @@ export default function NormalLoginForm() {
       <div className="login-title">
         <h1>Login</h1>
       </div>
-
       <div className="login-wrapper">
         <Form
           name="normal_login"
