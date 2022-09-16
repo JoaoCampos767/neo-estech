@@ -1,15 +1,1 @@
-.home-wrapper{
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  align-items: center;  
-}
-
-.ant-btn-home {
-  margin-top: 10rem;
-  margin-right: 3rem;
-  width: 10rem;
-  height: 4rem;
-}
+@import '~antd/dist/antd.css';
