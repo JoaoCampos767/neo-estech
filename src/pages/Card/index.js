@@ -31,27 +31,31 @@ export default function Cardd() {
 
   const App = () => (
     <>
+      <div className="btn-wrapper-card">
+        <Link to={{ pathname: "/home" }}>
+          <Button className="ant-btn-card" type="primary">
+            Voltar
+          </Button>
+        </Link>
+      </div>
+
       {qrcode.map((data) => {
         return (
-          <Card
-            title="Status da Estação"
-            Style={
-              data.status === "Online"
-                ? "border: 2.5px solid green"
-                : "border: 2.5px solid red"
-            }
-          >
-            <div>{data.nome}</div>
-            <div>Status: {data.status}</div>
-          </Card>
+          <div className="card-wrapper">
+            <Card
+              title="Status da Estação"
+              Style={
+                data.status === "Online"
+                  ? "border: 2.5px solid green"
+                  : "border: 2.5px solid red"
+              }
+            >
+              <div>{data.nome}</div>
+              <div>Status: {data.status}</div>
+            </Card>
+          </div>
         );
       })}
-
-      <Link to={{ pathname: "/" }}>
-        <Button className="ant-btn-card" type="link">
-          Voltar
-        </Button>
-      </Link>
     </>
   );
 

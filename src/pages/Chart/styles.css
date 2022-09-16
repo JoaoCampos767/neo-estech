@@ -1,8 +1,25 @@
 .Chart {
-    font-family: sans-serif;
-    text-align: center;
-  }
-  
-.recharts-surface{
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.recharts-surface {
   margin-top: 50px;
+}
+
+.chart-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+.ant-btn-chart {
+  width: 10rem;
+}
+
+.btn-wrapper-chart {
+  margin-left: 0.6rem;
+  margin-top: 0.6rem;
 }

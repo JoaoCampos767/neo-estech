@@ -63,10 +63,17 @@ export default function Tabled() {
 
   return (
     <>
-      <App />
-      <Link to={{pathname: "/"}}>
-        <Button className="ant-btn-table" type="link">Voltar</Button>
-      </Link>
+      <div className="btn-wrapper-table">
+        <Link to={{ pathname: "/home" }}>
+          <Button className="ant-btn-table" type="primary">
+            Voltar
+          </Button>
+        </Link>
+      </div>
+
+      <div className="table-wrapper">
+        <App />
+      </div>
     </>
   );
 }

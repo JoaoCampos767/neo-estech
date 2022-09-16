@@ -1,9 +1,16 @@
 @import "~antd/dist/antd.css";
 
+.table-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
 .ant-spin-container {
   width: 80rem;
   border: 2px solid;
-  margin-left: 7rem;
   margin-top: 2rem;
 
   border-top-left-radius: 5px;
@@ -13,10 +20,15 @@
   font-size: 15px;
 }
 
-.ant-pagination{
-    width: 78.8rem;
+.ant-pagination {
+  width: 78.8rem;
 }
 
 .ant-btn-table{
-    margin-left: 7rem;
-  }
+  width: 10rem;
+}
+
+.btn-wrapper-table {
+  margin-left: 0.6rem;
+  margin-top: 0.6rem;
+}
