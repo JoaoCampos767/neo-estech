@@ -8,7 +8,7 @@ import Card from "./pages/Card";
 
 export default function Rotas() {
   return (
-    <BrowserRouter>
+  <BrowserRouter>
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/home" element={<Home />} />

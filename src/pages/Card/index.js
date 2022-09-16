@@ -21,7 +21,6 @@ export default function Cardd() {
     axios
       .request(config)
       .then(function (response) {
-        console.log(response.data.status_internet);
         setQrcode(response.data.status_internet);
       })
       .catch(function (error) {

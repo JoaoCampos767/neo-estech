@@ -1,7 +1,6 @@
 import { Menu } from "antd";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Table from "../Table";
 import "./styles.css";
 
 const items = [
@@ -35,7 +34,7 @@ const items = [
   {
     label: (
       <a target="_blank" rel="noopener noreferrer">
-        Log in
+        Log Out
         <Link to={{ pathname: "/" }} />
       </a>
     ),
@@ -52,12 +51,22 @@ const App = () => {
   };
 
   return (
-    <Menu
-      onClick={onClick}
-      selectedKeys={[current]}
-      mode="horizontal"
-      items={items}
-    />
+    <>
+      <Menu
+        onClick={onClick}
+        selectedKeys={[current]}
+        mode="horizontal"
+        items={items}
+      />
+      <div>
+        <div className="home-title">
+          <h1 className="h1-title">Olá!</h1>
+        </div>
+        <div className="home-sub-title">
+          <h2 className="h2-title">Bem vindo</h2>
+        </div>
+      </div>
+    </>
   );
 };
 

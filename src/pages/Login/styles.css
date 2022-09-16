@@ -34,3 +34,7 @@
   font-weight: 700;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+[data-theme="compact"] .code-box-demo .ant-alert {
+  margin-bottom: 8px;
+}

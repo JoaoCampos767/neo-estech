@@ -1,18 +1,18 @@
-import React from "react";
+import * as React from "react";
 import "antd/dist/antd.css";
-import "../Login/styles.css";
+import "./styles.css";
 import { Form, Input, Button, Alert } from "antd";
 import { UserOutlined, LockOutlined } from "@ant-design/icons";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
-const NormalLoginForm = () => {
+export default function NormalLoginForm() {
+  const navigate = useNavigate();
+
   const onFinish = (values) => {
     console.log("Received values of form: ", values);
 
     if (values.username === "testedev" && values.password === "12345678") {
-      <Link to={{ pathname: "/home" }} />;
-    } else {
-      console.log("Login is false");
+      navigate("/home");
     }
   };
 
@@ -74,6 +74,6 @@ const NormalLoginForm = () => {
       </div>
     </>
   );
-};
+}
 
-export default NormalLoginForm;
+// export default NormalLoginForm;
